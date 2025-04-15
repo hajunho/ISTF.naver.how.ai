@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI 서비스 모음 | naver.how</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://naver.how/ai/styles.css">
+
+</head>
+<body>
+<div class="container">
+	<header>
+		<h1>AI 서비스 모음</h1>
+		<button id="bookmark-button" class="bookmark-btn" title="프리미엄 AI 서비스 즐겨찾기에 추가">
+			<i class="fas fa-bookmark"></i> 프리미엄 서비스 즐겨찾기
+		</button>
+		<div class="animated-bg"></div>
+	</header>
+
+	<main>
+		<div class="service-grid" id="services-container">
+			<!-- 프리미엄 카드 섹션 -->
+			<div class="premium-section">
+				<div class="section-title">프리미엄 AI 서비스</div>
+
+				<!-- Claude 3.7 - 프리미엄 카드 -->
+				<div class="service-card premium-card" data-category="coding">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="premium-badge">프리미엄</div>
+							<i class="fas fa-code icon"></i>
+							<h3>Claude 3.7</h3>
+						</div>
+						<div class="card-back">
+							<p>코딩에 특화된 강력한 AI 모델</p>
+							<p class="premium-feature">코드 생성 및 분석, 복잡한 프로그래밍 문제 해결</p>
+							<a href="https://claude.ai" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- GPT-4.5 - 프리미엄 카드 -->
+				<div class="service-card premium-card" data-category="writing">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="premium-badge">프리미엄</div>
+							<i class="fas fa-pen-fancy icon"></i>
+							<h3>GPT-4.5</h3>
+						</div>
+						<div class="card-back">
+							<p>글쓰기에 특화된 최신 AI 모델</p>
+							<p class="premium-feature">다양한, 창의적인 글쓰기 지원</p>
+							<a href="https://chat.openai.com" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Grok-3 - 프리미엄 카드 -->
+				<div class="service-card premium-card" data-category="chat">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="premium-badge">프리미엄</div>
+							<i class="fas fa-robot icon"></i>
+							<h3>Grok-3</h3>
+						</div>
+						<div class="card-back">
+							<p>일반적인 대화와 검색에 강한 AI 챗봇</p>
+							<p class="premium-feature">실시간 정보 제공 및 유머러스한 대화</p>
+							<a href="https://grok.com/?referrer=website" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Perplexity - 프리미엄 카드 -->
+				<div class="service-card premium-card" data-category="research">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="premium-badge">프리미엄</div>
+							<i class="fas fa-microscope icon"></i>
+							<h3>Perplexity</h3>
+						</div>
+						<div class="card-back">
+							<p>리서치에 특화된 AI 도구</p>
+							<p class="premium-feature">출처와 함께 정확한 정보 제공</p>
+							<a href="https://perplexity.ai" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+                <div class="service-card premium-card" data-category="coding">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="premium-badge">프리미엄</div>
+							<i class="fas fa-code icon"></i>
+							<h3>Felo.ai</h3>
+						</div>
+						<div class="card-back">
+							<p>에이전트 기능과 마인드맵에 강한</p>
+							<p class="premium-feature">심층 보고서용 에이전트, 마인드맵 생성</p>
+							<a href="https://felo.ai" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 개발 플랫폼 섹션 추가 -->
+			<div class="regular-section">
+				<div class="section-title">AI 개발 플랫폼</div>
+
+				<!-- Hugging Face -->
+				<div class="service-card" data-category="development">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-brain icon"></i>
+							<h3>Hugging Face</h3>
+						</div>
+						<div class="card-back">
+							<p>AI 모델 허브 및 개발 커뮤니티</p>
+							<a href="https://huggingface.co" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- GitHub -->
+				<div class="service-card" data-category="development">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fab fa-github icon"></i>
+							<h3>GitHub</h3>
+						</div>
+						<div class="card-back">
+							<p>AI 프로젝트 및 오픈소스 개발 플랫폼</p>
+							<a href="https://github.com" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- naver.how/ai/models -->
+				<div class="service-card" data-category="development">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fab fa-github icon"></i>
+							<h3>AI 모델 리스트</h3>
+						</div>
+						<div class="card-back">
+							<p>AI 모델 검색, 다운로드</p>
+							<a href="https://naver.how/ai/models" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- 일반 카드 섹션 -->
+			<div class="regular-section">
+				<div class="section-title">기타 AI 서비스</div>
+
+				<!-- You.com -->
+				<div class="service-card" data-category="search">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-search icon"></i>
+							<h3>You.com</h3>
+						</div>
+						<div class="card-back">
+							<p>AI 기반 검색 엔진</p>
+							<a href="https://you.com" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- DeepSeek-R1/o3 -->
+				<div class="service-card" data-category="math">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-square-root-alt icon"></i>
+							<h3>DeepSeek-R1/o3</h3>
+						</div>
+						<div class="card-back">
+							<p>수학 문제 해결에 특화된 AI</p>
+							<a href="https://deepseek.ai" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- Mureka -->
+				<div class="service-card" data-category="music">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-music icon"></i>
+							<h3>Mureka</h3>
+						</div>
+						<div class="card-back">
+							<p>AI 작곡 및 음악 생성 서비스</p>
+							<a href="https://www.mureka.ai" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- UXPilot.ai -->
+				<div class="service-card" data-category="ux">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-user-check icon"></i>
+							<h3>UXPilot.ai</h3>
+						</div>
+						<div class="card-back">
+							<p>UX 리서치 및 분석 자동화 AI 도구</p>
+							<a href="https://uxpilot.ai/" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Midjourney -->
+				<div class="service-card" data-category="image">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-image icon"></i>
+							<h3>Midjourney</h3>
+						</div>
+						<div class="card-back">
+							<p>고품질 이미지 생성 AI 서비스</p>
+							<a href="https://www.midjourney.com" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Luma AI -->
+				<div class="service-card" data-category="3d">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-cube icon"></i>
+							<h3>Luma AI</h3>
+						</div>
+						<div class="card-back">
+							<p>3D 콘텐츠 및 증강현실 생성 AI</p>
+							<a href="https://lumalabs.ai" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Brunch -->
+				<div class="service-card" data-category="writing">
+					<div class="card-inner">
+						<div class="card-front">
+							<i class="fas fa-pencil-alt icon"></i>
+							<h3>Brunch</h3>
+						</div>
+						<div class="card-back">
+							<p>글쓰기 플랫폼 및 AI 작문 도구</p>
+							<a href="https://brunch.co.kr" class="btn" target="_blank">바로가기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="regular-section">
+    <div class="section-title">AI 콘텐츠 생성 도구</div>
+
+    <!-- DALL-E 3 -->
+    <div class="service-card" data-category="image">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-paint-brush icon"></i>
+                <h3>DALL-E 3</h3>
+            </div>
+            <div class="card-back">
+                <p>OpenAI의 고급 이미지 생성 AI</p>
+                <a href="https://openai.com/dall-e-3" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stable Diffusion -->
+    <div class="service-card" data-category="image">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-palette icon"></i>
+                <h3>Stable Diffusion</h3>
+            </div>
+            <div class="card-back">
+                <p>오픈소스 이미지 생성 AI 모델</p>
+                <a href="https://stability.ai" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- RunwayML -->
+    <div class="service-card" data-category="video">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-film icon"></i>
+                <h3>RunwayML</h3>
+            </div>
+            <div class="card-back">
+                <p>AI 기반 비디오 생성 및 편집 도구</p>
+                <a href="https://runwayml.com" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ElevenLabs -->
+    <div class="service-card" data-category="audio">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-microphone-alt icon"></i>
+                <h3>ElevenLabs</h3>
+            </div>
+            <div class="card-back">
+                <p>고품질 AI 음성 합성 플랫폼</p>
+                <a href="https://elevenlabs.io" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jasper -->
+    <div class="service-card" data-category="writing">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-feather-alt icon"></i>
+                <h3>Jasper</h3>
+            </div>
+            <div class="card-back">
+                <p>마케팅 콘텐츠 생성 AI 도구</p>
+                <a href="https://jasper.ai" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AI 교육 및 학습 리소스 섹션 -->
+<div class="regular-section">
+    <div class="section-title">AI 교육 및 학습 리소스</div>
+
+    <!-- Coursera AI -->
+    <div class="service-card" data-category="education">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-graduation-cap icon"></i>
+                <h3>Coursera AI</h3>
+            </div>
+            <div class="card-back">
+                <p>AI, 머신러닝 관련 온라인 강좌</p>
+                <a href="https://www.coursera.org/collections/artificial-intelligence" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fast.ai -->
+    <div class="service-card" data-category="education">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-rocket icon"></i>
+                <h3>Fast.ai</h3>
+            </div>
+            <div class="card-back">
+                <p>실용적인 딥러닝 무료 강좌</p>
+                <a href="https://www.fast.ai" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kaggle -->
+    <div class="service-card" data-category="education">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-chart-line icon"></i>
+                <h3>Kaggle</h3>
+            </div>
+            <div class="card-back">
+                <p>데이터 사이언스 경진대회 및 학습 플랫폼</p>
+                <a href="https://www.kaggle.com" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DeepLearning.AI -->
+    <div class="service-card" data-category="education">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-brain icon"></i>
+                <h3>DeepLearning.AI</h3>
+            </div>
+            <div class="card-back">
+                <p>앤드류 응의 AI 교육 플랫폼</p>
+                <a href="https://www.deeplearning.ai" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Korea -->
+    <div class="service-card" data-category="education">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-users icon"></i>
+                <h3>인공지능신문</h3>
+            </div>
+            <div class="card-back">
+                <p>한국 AI 뉴스</p>
+                <a href="https://aitimes.kr" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AI 데이터 및 분석 도구 섹션 -->
+<div class="regular-section">
+    <div class="section-title">AI 데이터 및 분석 도구</div>
+
+    <!-- Roboflow -->
+    <div class="service-card" data-category="data">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-eye icon"></i>
+                <h3>Roboflow</h3>
+            </div>
+            <div class="card-back">
+                <p>컴퓨터 비전 데이터 관리 플랫폼</p>
+                <a href="https://roboflow.com" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LangChain -->
+    <div class="service-card" data-category="data">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-link icon"></i>
+                <h3>LangChain</h3>
+            </div>
+            <div class="card-back">
+                <p>LLM 앱 개발 프레임워크</p>
+                <a href="https://langchain.com" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weights & Biases -->
+    <div class="service-card" data-category="data">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-tachometer-alt icon"></i>
+                <h3>Weights & Biases</h3>
+            </div>
+            <div class="card-back">
+                <p>ML 실험 추적 및 모델 관리 도구</p>
+                <a href="https://wandb.ai/site" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pinecone -->
+    <div class="service-card" data-category="data">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-database icon"></i>
+                <h3>Pinecone</h3>
+            </div>
+            <div class="card-back">
+                <p>벡터 데이터베이스 솔루션</p>
+                <a href="https://www.pinecone.io" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- WindServer -->
+    <div class="service-card" data-category="editor">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-wind icon"></i>
+                <h3>naver.how</h3>
+            </div>
+            <div class="card-back">
+                <p>IT 분야 통찰 및 NEWS 정리</p>
+                <a href="https://naver.how" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tableau AI -->
+    <div class="service-card" data-category="data">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-chart-pie icon"></i>
+                <h3>Tableau AI</h3>
+            </div>
+            <div class="card-back">
+                <p>AI 기반 데이터 시각화 플랫폼</p>
+                <a href="https://www.tableau.com/ai-analytics" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 서비스 하단 정보 섹션 -->
+<div class="info-section">
+    <div class="info-box">
+        <h4>✨ 최신 AI 정보 및 트렌드</h4>
+        <ul>
+            <li><a href="https://ai.googleblog.com/" target="_blank">Google AI 블로그</a></li>
+            <li><a href="https://openai.com/blog/" target="_blank">OpenAI 블로그</a></li>
+            <li><a href="https://news.mit.edu/topic/artificial-intelligence2" target="_blank">MIT AI 뉴스</a></li>
+            <li><a href="https://www.deeplearning.ai/the-batch/" target="_blank">The Batch 뉴스레터</a></li>
+<!--            <li><a href="https://aitimes.kr/" target="_blank">AI 타임즈 코리아</a></li>-->
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h4>🛠️ AI 개발자 필수 리소스</h4>
+        <ul>
+            <li><a href="https://pytorch.org/" target="_blank">PyTorch</a></li>
+            <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a></li>
+            <li><a href="https://keras.io/" target="_blank">Keras</a></li>
+            <li><a href="https://numpy.org/" target="_blank">NumPy</a></li>
+            <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a></li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h4>📚 AI 추천 도서</h4>
+        <ul>
+            <li><a href="https://www.amazon.com/Deep-Learning-Press-Essential-Knowledge/dp/0262537559/" target="_blank">Deep Learning (MIT Press)</a></li>
+            <li><a href="https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/" target="_blank">Hands-On Machine Learning</a></li>
+            <li><a href="https://www.amazon.com/Generative-Deep-Learning-Teaching-Machines/dp/1492041947/" target="_blank">생성형 딥러닝</a></li>
+<!--            <li><a href="https://www.onlybook.co.kr/entry/AI2023" target="_blank">AI 2023</a></li>-->
+<!--            <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=187731576" target="_blank">혼자 공부하는 머신러닝+딥러닝</a></li>-->
+        </ul>
+    </div>
+</div>
+
+		<!-- AI 개발 에디터 섹션 -->
+<div class="regular-section">
+    <div class="section-title">AI 개발 에디터</div>
+
+    <!-- Cursor -->
+    <div class="service-card" data-category="editor">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-keyboard icon"></i>
+                <h3>Cursor</h3>
+            </div>
+            <div class="card-back">
+                <p>AI 통합 코드 에디터 - 코드 생성 및 수정</p>
+                <a href="https://cursor.sh" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visual Studio Code + GitHub Copilot -->
+    <div class="service-card" data-category="editor">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-code icon"></i>
+                <h3>VS Code + Copilot</h3>
+            </div>
+            <div class="card-back">
+                <p>인기 코드 에디터와 AI 코드 어시스턴트 통합</p>
+                <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Replit -->
+    <div class="service-card" data-category="editor">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-terminal icon"></i>
+                <h3>Replit</h3>
+            </div>
+            <div class="card-back">
+                <p>브라우저 기반 코딩 환경 - AI 기능 통합</p>
+                <a href="https://replit.com" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Codium -->
+    <div class="service-card" data-category="editor">
+        <div class="card-inner">
+            <div class="card-front">
+                <i class="fas fa-file-code icon"></i>
+                <h3>Codium</h3>
+            </div>
+            <div class="card-back">
+                <p>오픈소스 AI 코딩 어시스턴트</p>
+                <a href="https://www.codium.ai" class="btn" target="_blank">바로가기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	</main>
+
+	<footer>
+		<p>&copy; 2025 naver.how/ai by ISTF, Intel Suwon Task Force(4th) </p>
+		<div class="floating-particles"></div>
+	</footer>
+</div>
+
+<!-- 즐겨찾기 추가 팝업 -->
+<div id="bookmark-popup" class="bookmark-popup">
+	<div class="popup-content">
+		<span class="close-popup">&times;</span>
+		<h3>프리미엄 AI 서비스 즐겨찾기</h3>
+		<div class="bookmark-options">
+			<div class="bookmark-option">
+				<input type="checkbox" id="claude-bookmark" class="bookmark-check" checked data-url="https://claude.ai" data-name="Claude 3.7">
+				<label for="claude-bookmark">Claude 3.7</label>
+			</div>
+			<div class="bookmark-option">
+				<input type="checkbox" id="gpt-bookmark" class="bookmark-check" checked data-url="https://chat.openai.com" data-name="GPT-4.5">
+				<label for="gpt-bookmark">GPT-4.5</label>
+			</div>
+			<div class="bookmark-option">
+				<input type="checkbox" id="grok-bookmark" class="bookmark-check" checked data-url="https://grok.com/?referrer=website" data-name="Grok-3">
+				<label for="grok-bookmark">Grok-3</label>
+			</div>
+			<div class="bookmark-option">
+				<input type="checkbox" id="perplexity-bookmark" class="bookmark-check" checked data-url="https://perplexity.ai" data-name="Perplexity">
+				<label for="perplexity-bookmark">Perplexity</label>
+			</div>
+            <div class="bookmark-option">
+				<input type="checkbox" id="felo-bookmark" class="bookmark-check" checked data-url="https://felo.ai" data-name="Felo">
+				<label for="felo-bookmark">Felo.ai</label>
+			</div>
+            	<!-- felo.ai -->
+<!--				<div class="service-card" data-category="search">-->
+<!--					<div class="card-inner">-->
+<!--						<div class="card-front">-->
+<!--							<i class="fas fa-search icon"></i>-->
+<!--							<h3>felo.ai</h3>-->
+<!--						</div>-->
+<!--						<div class="card-back">-->
+<!--							<p>검색에 강한 어시스턴트</p>-->
+<!--							<a href="https://felo.ai" class="btn" target="_blank">바로가기</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+		</div>
+		<div class="popup-buttons">
+			<button id="add-bookmarks-btn" class="btn">즐겨찾기 추가</button>
+			<button id="cancel-bookmarks-btn" class="btn-secondary">취소</button>
+		</div>
+		<p class="bookmark-note">* 즐겨찾기 추가는 크롬 보안 정책상, 추가 방법만 안내 드립니다 *</p>
+	</div>
+</div>
+
+<script>
+	// 즐겨찾기 기능 JavaScript
+	document.addEventListener('DOMContentLoaded', function() {
+		// 즐겨찾기 버튼 및 팝업 요소
+		const bookmarkBtn = document.getElementById('bookmark-button');
+		const bookmarkPopup = document.getElementById('bookmark-popup');
+		const closePopupBtn = document.querySelector('.close-popup');
+		const addBookmarksBtn = document.getElementById('add-bookmarks-btn');
+		const cancelBookmarksBtn = document.getElementById('cancel-bookmarks-btn');
+
+		// 즐겨찾기 버튼 클릭 이벤트
+		if (bookmarkBtn) {
+			bookmarkBtn.addEventListener('click', function() {
+				// 팝업 표시
+				bookmarkPopup.style.display = 'flex';
+			});
+		}
+
+		// 팝업 닫기 버튼 클릭 이벤트
+		if (closePopupBtn) {
+			closePopupBtn.addEventListener('click', function() {
+				bookmarkPopup.style.display = 'none';
+			});
+		}
+
+		// 취소 버튼 클릭 이벤트
+		if (cancelBookmarksBtn) {
+			cancelBookmarksBtn.addEventListener('click', function() {
+				bookmarkPopup.style.display = 'none';
+			});
+		}
+
+		// 팝업 바깥 클릭 시 닫기
+		bookmarkPopup.addEventListener('click', function(e) {
+			if (e.target === bookmarkPopup) {
+				bookmarkPopup.style.display = 'none';
+			}
+		});
+
+		// 즐겨찾기 추가 버튼 클릭 이벤트
+// 즐겨찾기 추가 버튼 클릭 이벤트
+		if (addBookmarksBtn) {
+			addBookmarksBtn.addEventListener('click', function() {
+				const checkedBookmarks = document.querySelectorAll('.bookmark-check:checked');
+
+				if (checkedBookmarks.length === 0) {
+					alert('선택된 서비스가 없습니다. 최소 하나 이상의 서비스를 선택해주세요.');
+					return;
+				}
+
+				// 선택된 서비스를 즐겨찾기에 추가
+				let successCount = 0;
+
+				checkedBookmarks.forEach(bookmark => {
+					const url = bookmark.dataset.url;
+					const name = bookmark.dataset.name;
+
+					try {
+						// 각 서비스의 실제 URL을 사용하여 즐겨찾기 추가 시도
+						if (window.sidebar && window.sidebar.addPanel) { // Firefox < 23
+							window.sidebar.addPanel(name, url, '');
+							successCount++;
+						} else if(window.external && ('AddFavorite' in window.external)) { // IE
+							window.external.AddFavorite(url, name);
+							successCount++;
+						} else { // 크롬, 사파리, 엣지 등 모던 브라우저
+							// 각 URL을 개별적으로 즐겨찾기에 추가하도록 안내
+							alert(`"${name}" 서비스를 즐겨찾기에 추가하려면:\n\n1. ${url} 페이지를 새 탭에서 열어주세요.\n2. 해당 페이지에서 Ctrl+D(Windows) 또는 Cmd+D(Mac)를 눌러 즐겨찾기에 추가하세요.`);
+						}
+					} catch(e) {
+						console.error('즐겨찾기 추가 중 오류 발생:', e);
+
+						// 각 서비스의 URL을 직접 열어주는 방식으로 변경
+						if (confirm(`브라우저 보안 정책으로 자동 즐겨찾기가 차단되었습니다.\n\n"${name}" 페이지를 새 탭에서 열어서 직접 즐겨찾기에 추가하시겠습니까?`)) {
+							window.open(url, '_blank');
+						}
+					}
+				});
+
+				// 팝업 닫기
+				bookmarkPopup.style.display = 'none';
+
+				// 성공 메시지 표시
+				if (successCount > 0 || checkedBookmarks.length > 0) {
+					showSuccessMessage();
+				}
+			});
+		}
+
+
+		// 즐겨찾기 성공 메시지 표시 함수
+		function showSuccessMessage() {
+			// 이미 존재하는 메시지가 있다면 제거
+			const existingMessage = document.querySelector('.bookmark-success');
+			if (existingMessage) {
+				existingMessage.remove();
+			}
+
+			// 새 메시지 생성
+			const successMessage = document.createElement('div');
+			successMessage.className = 'bookmark-success';
+			successMessage.innerHTML = '<i class="fas fa-check-circle"></i> 즐겨찾기에 직접 추가해주세요!';
+			document.body.appendChild(successMessage);
+
+			// 메시지 표시
+			successMessage.style.display = 'block';
+
+			// 3초 후 메시지 제거
+			setTimeout(() => {
+				successMessage.style.opacity = '0';
+				setTimeout(() => {
+					successMessage.remove();
+				}, 500);
+			}, 3000);
+		}
+
+		// 애니메이션 배경에 움직이는 효과 추가
+		const animatedBg = document.querySelector('.animated-bg');
+
+		// 카드 애니메이션 효과
+		const cards = document.querySelectorAll('.service-card');
+		// cards.forEach((card, index) => {
+		// 	// 일반 카드는 기존 애니메이션 적용
+		// 	if (!card.classList.contains('premium-card')) {
+		// 		card.style.animation = `fadeInUp 0.6s ease forwards ${index * 0.1 + 0.5}s`;
+		// 		card.style.opacity = '0';
+		// 	}
+		// });
+
+		// 프리미엄 카드 효과
+		enhancePremiumCards();
+
+		// 배경 입자 애니메이션 생성
+		createParticles();
+
+		// 마우스 이동에 따른 시차(parallax) 효과
+		document.addEventListener('mousemove', (e) => {
+			const moveX = (e.clientX / window.innerWidth - 0.5) * 20;
+			const moveY = (e.clientY / window.innerHeight - 0.5) * 20;
+
+			if (animatedBg) {
+				animatedBg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+			}
+
+			// 일반 카드 이동 효과
+			cards.forEach(card => {
+				if (!card.classList.contains('premium-card')) {
+					const depth = Math.random() * 0.5 + 0.5; // 0.5 ~ 1.0 사이의 랜덤 깊이
+					card.style.transform = `translate(${moveX * depth * 0.1}px, ${moveY * depth * 0.1}px)`;
+				}
+			});
+
+			// 프리미엄 카드 특별 이동 효과
+			const premiumCards = document.querySelectorAll('.premium-card');
+			premiumCards.forEach(card => {
+				const depth = Math.random() * 0.7 + 0.8; // 더 깊은 시차 효과
+
+				// 카드가 뒤집힌 상태가 아닐 때만 이동 효과 적용
+				if (!card.querySelector('.card-inner').classList.contains('flipped')) {
+					card.style.transform = `translate(${moveX * depth * 0.15}px, ${moveY * depth * 0.15}px)`;
+				}
+
+				// 아이콘에 추가 효과
+				const icon = card.querySelector('.icon');
+				if (icon) {
+					icon.style.transform = `translate(${moveX * 0.05}px, ${moveY * 0.05}px) scale(1.05)`;
+				}
+
+				// 뱃지에 특별 효과
+				const badge = card.querySelector('.premium-badge');
+				if (badge) {
+					badge.style.transform = `translate(${-moveX * 0.08}px, ${-moveY * 0.08}px)`;
+				}
+			});
+		});
+	});
+
+	// 프리미엄 카드 기능 향상
+	function enhancePremiumCards() {
+		const premiumCards = document.querySelectorAll('.premium-card');
+
+		premiumCards.forEach((card, index) => {
+			// 각 카드마다 다른 애니메이션 지연 적용
+			card.style.animationDelay = `${index * 0.15}s`;
+
+			// 카드 내부 요소
+			const inner = card.querySelector('.card-inner');
+
+			// 각 카드에 호버 효과 추가
+			card.addEventListener('mouseenter', () => {
+				// 빛나는 효과 추가
+				addGlowEffect(card);
+			});
+
+			card.addEventListener('mouseleave', () => {
+				// 빛나는 효과 제거
+				removeGlowEffect(card);
+
+				// 고정 상태가 아니면 원래 상태로 돌아가도록
+				if (!inner.classList.contains('fixed')) {
+					inner.classList.remove('flipped');
+				}
+			});
+
+			// 클릭 이벤트 - 고정 상태 토글 (버그 수정)
+			card.addEventListener('click', (e) => {
+				// 이벤트 버블링 방지
+				e.stopPropagation();
+
+				// 버튼 클릭 시에는 뒤집기 효과 제외
+				if (e.target.closest('.btn')) return;
+
+				// 이미 고정된 상태면 해제
+				if (inner.classList.contains('fixed')) {
+					inner.classList.remove('fixed');
+					inner.classList.remove('flipped');
+					setTimeout(() => {
+						inner.style.transform = '';
+					}, 10);
+				}
+				// 아니면 고정 상태로 설정
+				else {
+					inner.classList.add('fixed');
+					inner.classList.add('flipped');
+					inner.style.transform = 'rotateY(180deg)';
+				}
+			});
+		});
+	}
+
+	// 빛나는 효과 추가 함수
+	function addGlowEffect(card) {
+		// 기존 효과가 있다면 제거
+		removeGlowEffect(card);
+
+		// 카드 카테고리에 따라 다른 색상 적용
+		let glowColor;
+
+		switch(card.getAttribute('data-category')) {
+			case 'coding':
+				glowColor = 'rgba(66, 133, 244, 0.3)';
+				break;
+			case 'writing':
+				glowColor = 'rgba(234, 67, 53, 0.3)';
+				break;
+			case 'chat':
+				glowColor = 'rgba(52, 168, 83, 0.3)';
+				break;
+			case 'research':
+				glowColor = 'rgba(251, 188, 5, 0.3)';
+				break;
+			default:
+				glowColor = 'rgba(123, 54, 255, 0.3)';
+		}
+
+		const glow = document.createElement('div');
+		glow.classList.add('premium-glow');
+		glow.style.cssText = `
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                right: -15px;
+                bottom: -15px;
+                background: radial-gradient(ellipse at center, ${glowColor} 0%, rgba(255,255,255,0) 70%);
+                border-radius: 15px;
+                z-index: -1;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            `;
+
+		card.appendChild(glow);
+
+		// 애니메이션을 위한 타이밍 설정
+		setTimeout(() => {
+			glow.style.opacity = '1';
+		}, 10);
+	}
+
+	// 빛나는 효과 제거 함수
+	function removeGlowEffect(card) {
+		const existingGlow = card.querySelector('.premium-glow');
+
+		if (existingGlow) {
+			existingGlow.style.opacity = '0';
+			setTimeout(() => {
+				existingGlow.remove();
+			}, 500);
+		}
+	}
+
+	// 랜덤 배경 입자 생성 함수
+	function createParticles() {
+		const container = document.querySelector('.floating-particles');
+		if (!container) return;
+
+		const particleCount = 50;
+
+		for (let i = 0; i < particleCount; i++) {
+			const particle = document.createElement('div');
+			particle.classList.add('particle');
+
+			// 랜덤 스타일 설정
+			const size = Math.random() * 10 + 5;
+			const posX = Math.random() * 100;
+			const posY = Math.random() * 100;
+			const duration = Math.random() * 20 + 10;
+			const delay = Math.random() * 5;
+
+			// 입자 색상 랜덤 설정 (AI 서비스 테마 색상들)
+			const colors = ['#4285f4', '#34a853', '#ea4335', '#fbbc05', '#7b36ff', '#1da1f2', '#ff6d00'];
+			const color = colors[Math.floor(Math.random() * colors.length)];
+
+			// 입자 스타일 적용
+			particle.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background-color: ${color};
+                    border-radius: 50%;
+                    opacity: ${Math.random() * 0.6 + 0.2};
+                    left: ${posX}%;
+                    top: ${posY}%;
+                    animation: float ${duration}s ease-in-out ${delay}s infinite;
+                    box-shadow: 0 0 ${size}px ${color};
+                `;
+
+			container.appendChild(particle);
+		}
+
+		// 프리미엄 카드 주변에 특별한 파티클 생성
+		createPremiumParticles();
+
+		// 헤더에도 입자 추가
+		const header = document.querySelector('header');
+		if (header) {
+			const headerParticleCount = 30;
+
+			for (let i = 0; i < headerParticleCount; i++) {
+				const particle = document.createElement('div');
+				particle.classList.add('header-particle');
+
+				const size = Math.random() * 8 + 3;
+				const posX = Math.random() * 100;
+				const posY = Math.random() * 100;
+				const duration = Math.random() * 15 + 5;
+				const delay = Math.random() * 3;
+
+				particle.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        background-color: rgba(255, 255, 255, 0.6);
+                        border-radius: 50%;
+                        left: ${posX}%;
+                        top: ${posY}%;
+                        animation: float ${duration}s ease-in-out ${delay}s infinite;
+                        z-index: 2;
+                    `;
+
+				header.appendChild(particle);
+			}
+		}
+	}
+
+	// 프리미엄 카드 주변에 특별한 파티클 생성
+	function createPremiumParticles() {
+		const premiumCards = document.querySelectorAll('.premium-card');
+
+		premiumCards.forEach(card => {
+			const frontface = card.querySelector('.card-front');
+			if (!frontface) return;
+
+			const particleContainer = document.createElement('div');
+			particleContainer.classList.add('premium-particles');
+			particleContainer.style.cssText = `
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    pointer-events: none;
+                    overflow: hidden;
+                `;
+
+			frontface.appendChild(particleContainer);
+
+			// 카드 카테고리에 따라 다른 색상 사용
+			let particleColors;
+
+			switch(card.getAttribute('data-category')) {
+				case 'coding':
+					particleColors = ['rgba(66, 133, 244, 0.7)', 'rgba(123, 54, 255, 0.7)'];
+					break;
+				case 'writing':
+					particleColors = ['rgba(234, 67, 53, 0.7)', 'rgba(255, 109, 0, 0.7)'];
+					break;
+				case 'chat':
+					particleColors = ['rgba(52, 168, 83, 0.7)', 'rgba(66, 133, 244, 0.7)'];
+					break;
+				case 'research':
+					particleColors = ['rgba(251, 188, 5, 0.7)', 'rgba(234, 67, 53, 0.7)'];
+					break;
+				default:
+					particleColors = ['rgba(123, 54, 255, 0.7)', 'rgba(66, 133, 244, 0.7)'];
+			}
+
+			// 각 카드에 10-15개의 파티클 생성
+			const particleCount = Math.floor(Math.random() * 6) + 10;
+
+			for (let i = 0; i < particleCount; i++) {
+				const particle = document.createElement('div');
+				const size = Math.random() * 4 + 2;
+				const color = particleColors[Math.floor(Math.random() * particleColors.length)];
+
+				particle.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        background-color: ${color};
+                        border-radius: 50%;
+                        top: ${Math.random() * 100}%;
+                        left: ${Math.random() * 100}%;
+                        opacity: ${Math.random() * 0.5 + 0.2};
+                        box-shadow: 0 0 ${size * 2}px ${color.replace('0.7', '0.5')};
+                        animation: premiumFloat ${Math.random() * 10 + 10}s linear infinite;
+                        animation-delay: -${Math.random() * 10}s;
+                    `;
+
+				particleContainer.appendChild(particle);
+			}
+		});
+	}
+
+	// 일반 카드 클릭 토글 효과
+	document.querySelectorAll('.service-card:not(.premium-card)').forEach(card => {
+		const inner = card.querySelector('.card-inner');
+		if (!inner) return;
+
+		card.addEventListener('click', (e) => {
+			// 버튼 클릭 시에는 뒤집기 효과 제외
+			if (e.target.closest('.btn')) return;
+
+			// 이벤트 버블링 방지
+			e.stopPropagation();
+
+			inner.classList.toggle('flipped');
+
+			if (inner.classList.contains('flipped')) {
+				inner.style.transform = 'rotateY(180deg)';
+			} else {
+				inner.style.transform = '';
+			}
+		});
+	});
+
+
+	// 추가된 서비스 카드들에 애니메이션 및 이벤트 적용을 위한 코드
+
+	document.addEventListener('DOMContentLoaded', function() {
+		// 기존 함수들은 그대로 두고, 새 서비스 카드들도 자동으로 적용됩니다
+
+		// 새 서비스 카드 클릭 토글 효과 적용
+		const newCards = document.querySelectorAll('#services-container .service-card');
+
+		newCards.forEach(card => {
+			if (!card.hasEventListener) { // 중복 이벤트 리스너 방지
+				const inner = card.querySelector('.card-inner');
+				if (!inner) return;
+
+				card.addEventListener('click', (e) => {
+					// 버튼 클릭 시에는 뒤집기 효과 제외
+					if (e.target.closest('.btn')) return;
+
+					// 이벤트 버블링 방지
+					e.stopPropagation();
+
+					inner.classList.toggle('flipped');
+
+					if (inner.classList.contains('flipped')) {
+						inner.style.transform = 'rotateY(180deg)';
+					} else {
+						inner.style.transform = '';
+					}
+				});
+
+				card.hasEventListener = true;
+			}
+		});
+
+		// 개발 플랫폼 카드 특별 스타일 (선택사항)
+		const devCards = document.querySelectorAll('[data-category="development"]');
+		devCards.forEach(card => {
+			// 개발 플랫폼 카드에 특별한 테두리 스타일 추가
+			card.style.borderColor = '#4285f4';
+
+			// GitHub 카드에 특별 효과
+			if (card.querySelector('h3').textContent.includes('GitHub')) {
+				const icon = card.querySelector('.icon');
+				if (icon) {
+					icon.style.color = '#333';
+				}
+			}
+
+			// Hugging Face 카드에 특별 효과
+			if (card.querySelector('h3').textContent.includes('Hugging Face')) {
+				const icon = card.querySelector('.icon');
+				if (icon) {
+					icon.style.color = '#FFBD59';
+				}
+			}
+		});
+
+		// 이미지 생성 카드 특별 효과 (Midjourney)
+		const imageCards = document.querySelectorAll('[data-category="image"]');
+		imageCards.forEach(card => {
+			const frontFace = card.querySelector('.card-front');
+			if (frontFace) {
+				// 이미지 카드에 그라데이션 배경 효과 추가
+				frontFace.style.background = 'linear-gradient(to bottom right, #5433FF, #20BDFF, #A5FECB)';
+				frontFace.style.color = 'white';
+			}
+		});
+
+		// 3D 카드 특별 효과 (Luma AI)
+		const threeD_Cards = document.querySelectorAll('[data-category="3d"]');
+		threeD_Cards.forEach(card => {
+			const icon = card.querySelector('.icon');
+			if (icon) {
+				// 3D 아이콘에 회전 애니메이션 추가
+				icon.style.animation = 'rotate3D 8s infinite linear';
+			}
+		});
+
+		// Brunch 카드 특별 효과
+		const brunchCard = Array.from(document.querySelectorAll('.service-card'))
+				.find(card => card.querySelector('h3')?.textContent.includes('Brunch'));
+
+		if (brunchCard) {
+			const icon = brunchCard.querySelector('.icon');
+			if (icon) {
+				icon.style.color = '#00C3BD';
+			}
+		}
+	});
+
+	// 3D 아이콘 회전 애니메이션 CSS 정의
+	const styleSheet = document.createElement('style');
+	styleSheet.innerHTML = `
+  @keyframes rotate3D {
+    0% { transform: rotate3d(1, 1, 1, 0deg); }
+    100% { transform: rotate3d(1, 1, 1, 360deg); }
+  }
+`;
+	document.head.appendChild(styleSheet);
+</script>
+</body>
+</html>
